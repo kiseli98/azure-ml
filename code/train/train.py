@@ -120,7 +120,7 @@ def main1(args):
     joblib.dump(svm_model, os.path.join('outputs', model_file_name))
 
 
-def main(args):
+def main():
     # create the outputs folder
     os.makedirs('outputs', exist_ok=True)
 
