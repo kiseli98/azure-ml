@@ -32,8 +32,8 @@ def init():
 # run() method parses and validates the incoming payload against
 # the example input you provide here. This will also generate a Swagger
 # API document for your web service.
-# @input_schema('data', NumpyParameterType(np.array([[21, 916, 194, 451, 178]])))
-# @output_schema(StandardPythonParameterType({'predict': [['Iris-virginica']]}))
+@input_schema('data', NumpyParameterType(np.array([[21, 916, 194, 451, 178]])))
+@output_schema(StandardPythonParameterType({'predict': [[63300]]}))
 def run(data):
     # Use the model object loaded by init().
     result = model.predict(data)
